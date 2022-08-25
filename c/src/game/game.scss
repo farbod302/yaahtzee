@@ -1,0 +1,94 @@
+.game-fild {
+    display: grid;
+    height: 100vh;
+    background-color: #42855b;
+    grid-template-columns: 1fr 30rem;
+    .splash {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: #42855b;
+        font-size: 3rem;
+        color: white;
+        span {
+            color: #42855b;
+            background-color: #fff;
+            padding: 2rem;
+            cursor: pointer;
+        }
+    }
+    .scores {
+        background-color: #fff;
+        width: 99%;
+        margin: auto;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .title {
+            text-align: center;
+            font-size: 2rem;
+        }
+        .scors-list {
+            border-left: 1px solid gray;
+            li {
+                font-size: 1.2rem;
+                padding: 1rem 0.5rem;
+                border-bottom: 1px solid gray;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+    .roll {
+        text-align: center;
+        margin-top: 3rem;
+        button {
+            width: 13rem;
+        }
+    }
+    .fild {
+        color: #fff;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .dices {
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        column-gap: 1rem;
+        font-size: 2rem;
+        div {
+            border: 3px solid #fff;
+            text-align: center;
+            height: 50%;
+            display: grid;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+    .dice-option{
+        background-color: #42855b;
+        display: grid;
+        grid-template-columns: repeat(3,1fr );
+        height: 20rem;
+        cursor: pointer;
+    }
+
+    .keep{
+        display: grid;
+        grid-template-columns: repeat(5,1fr );
+        background-color: #42855b;
+        height: 10rem;
+        column-gap: 1rem;
+        div{
+            border: 1px solid white;
+            display: grid;
+            place-items: center;
+        }
+    }
+}
